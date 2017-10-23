@@ -1,0 +1,59 @@
+{% extends "inheritance/base.html" %}
+{% block content %}
+
+<div class="main">
+     <br/><br/><br/>
+     <a href="/" align="left">&nbsp;&nbsp;back<<<&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<div class="header" align="center">
+			<h1>Log in or create a new account </h1>
+		</div>
+
+		
+			<form   action="/loginin"  method="POST">
+				<ul class="left-form">
+					<h2>new account:</h2>
+					<li>
+						<input type="text"   placeholder="Username" name="username" required/>
+						<a href="#"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="text"   placeholder="Email" required/>
+						<a href="#"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="password"   placeholder="Password"  required/>
+						<a href="#" > </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input type="password"   placeholder="Confirm Password" required/>
+						<a href="#" > </a>
+						<div class="clear"> </div>
+					</li> 
+					<input type="submit" onClick="myFunction()" value="create a new account" name="username">
+						<div class="clear"> </div>
+				</ul>
+				<ul class="right-form">
+					<h3>login in:</h3>
+					<div>
+						<li><input type="text"  placeholder="Username" /></li>
+						<li> <input type="password"  placeholder="Password"/></li>
+						<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+							<input type="submit" onClick="myFunction()" value="login in">
+					</div>
+					<div class="clear"> </div>
+				</ul>
+				<div class="clear"> </div>
+					
+			</form>
+			
+		</div>
+
+   					<div class="copy-right" align="center">
+						<p> <a href="homepage.html" target="_blank" title="Music Space">Music Space</a> </p> 
+					</div>
+
+	
+{% endblock %}

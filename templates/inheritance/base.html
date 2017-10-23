@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+
+<link href="../../static/css/logininstyle.css" rel='stylesheet' type='text/css' />
+		<meta name="login" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" type="text/css" href="../../static/css/billboardstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../../static/js/bootstrap.min.js"/>
+
+<style>
+*{margin:0;
+ padding:0;
+}
+
+ body{padding-top:0px;
+ 	padding-bottom: 0px;
+ 	width:1400px;height:1200px;
+ 	margin:auto;
+    }
+ </style>
+
+
+ <body>
+<audio  autoplay="autoplay">
+     <source src="Wonderful U.mp3" type="audio/mpeg" autostart="true" loop="true">
+     </audio>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navbar">
+  <div class="container">
+
+    <div class="navbar-header" id="navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon=bar"></span>
+        <span class="icon=bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="font-size:30px">Music Space</a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+         <img src="{{ url_for('static', filename='../../static/images/8.png')}}"" width="38px"  height="38px" align="left"/>
+        <li><a href="/"  style="font-size:15px">Find Music</a></li>
+         <img src="{{ url_for('static', filename='../../static/images/8.png')}}"" width="38px"  height="38px" align="left"/>
+        <li><a href="#"  style="font-size:15px">My Music</a></li>
+         <img src="{{ url_for('static', filename='../../static/images/8.png')}}" width="38px"  height="38px" align="left"/>
+        <li><a href="loginin"  style="font-size:15px">Login in</a></li>
+    </div>
+
+
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">submit</button>
+      </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+{% block content %} {% endblock %}
+
+
+        <div id="footer" align="center">
+     <a href="/">Music Space</a> | <a href="">&copy;service center</a>      
+    </div>
+
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
